@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TimeTrack.Models;
+using TimeTrack.Data;
 
 namespace TimeTrack.Controllers
 {

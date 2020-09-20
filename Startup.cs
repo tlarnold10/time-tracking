@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TimeTrack.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TimeTrack
 {
@@ -31,6 +33,9 @@ namespace TimeTrack
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            // services.AddControllersWithViews();
+            services.AddDbContext<TimeTrackerContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("TimeTrackerContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

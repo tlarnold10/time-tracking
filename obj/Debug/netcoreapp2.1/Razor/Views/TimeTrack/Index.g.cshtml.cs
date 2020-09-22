@@ -66,7 +66,7 @@ using TimeTrack.Models;
             WriteLiteral("\n<h2>Index</h2>\n\n<p>\n    ");
             EndContext();
             BeginContext(108, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77254c8dad14b8596691d17814738db", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91d4e3b1dd5c4dd793862b6214725c1f", async() => {
                 BeginContext(131, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -144,7 +144,7 @@ using TimeTrack.Models;
             WriteLiteral("\n            </td>\n            <td>\n                ");
             EndContext();
             BeginContext(828, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5180005608ef43d1ae3763ce0c65020a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f453b92a1e45434886c0b413dfc1cab6", async() => {
                 BeginContext(873, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -179,7 +179,7 @@ using TimeTrack.Models;
             WriteLiteral(" |\n                ");
             EndContext();
             BeginContext(900, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b87779f847a54da3b65a3e094237e06f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d197da9d074e91ade94d4c8e9b9b42", async() => {
                 BeginContext(948, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -214,7 +214,7 @@ using TimeTrack.Models;
             WriteLiteral(" |\n                ");
             EndContext();
             BeginContext(978, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92e9d674394644e199d9bc5ec06e072a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2508681953d455ca4b419b174a7fe35", async() => {
                 BeginContext(1025, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

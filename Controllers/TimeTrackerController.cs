@@ -31,7 +31,7 @@ namespace TimeTrack.Controllers
             {
                 return NotFound();
             }
-            var client = await _context.Client.FirstOrDefaultAsync(m => m.Id == id);
+            var client = await _context.Client.FirstOrDefaultAsync(m => m.ClientId == id);
             if (client == null)
             {
                 return NotFound();
@@ -59,10 +59,10 @@ namespace TimeTrack.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, 
-            [Bind("Id,Name,StartDate,Location")] 
+            [Bind("ClientId,ClientDate,StartDate,Location")] 
             Client client)
         {
-            if (id != client.Id)
+            if (id != client.ClientId)
             {
                 return NotFound();
             }
@@ -76,7 +76,7 @@ namespace TimeTrack.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientExists(client.Id))
+                    if (!ClientExists(client.ClientId))
                     {
                         return NotFound();
                     }
@@ -100,7 +100,7 @@ namespace TimeTrack.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("Id,Name,StartDate,Location")
+            [Bind("ClientId,ClientName,StartDate,Location")
             ] Client client)
         {
             if (ModelState.IsValid)
@@ -116,7 +116,7 @@ namespace TimeTrack.Controllers
         // you can find it being used above
         private bool ClientExists(int id)
         {
-            return _context.Client.Any(e => e.Id == id);
+            return _context.Client.Any(e => e.ClientId == id);
         }
     }
 }

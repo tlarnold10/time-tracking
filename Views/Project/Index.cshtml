@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                Project ID
+            </th>
+            <th>
                 Project Name
             </th>
             <th>
@@ -30,6 +33,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectId)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ProjectName)
             </td>

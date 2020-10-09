@@ -30,10 +30,6 @@
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/TimeTrack.dll
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/TimeTrack.pdb
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/TimeTrack.csproj.CopyComplete
-/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/TimeTrack/Index.g.cshtml.cs
-/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/TimeTrack/details.g.cshtml.cs
-/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/TimeTrack/Edit.g.cshtml.cs
-/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/TimeTrack/Create.g.cshtml.cs
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/Project/Create.g.cshtml.cs
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/Project/Delete.g.cshtml.cs
 /home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/Debug/netcoreapp2.1/Razor/Views/Project/Details.g.cshtml.cs

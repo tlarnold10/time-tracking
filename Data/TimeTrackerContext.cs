@@ -12,5 +12,6 @@ namespace TimeTrack.Data
 
         public DbSet<Client> Client { get; set; }
         public DbSet<Project> Project { get; set; }
+        public DbSet<TimeEntry> TimeEntry { get; set; }
     }
 }

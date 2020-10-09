@@ -31,4 +31,17 @@ namespace TimeTrack.Models
         public int ClientId { get; set; }
         public Client Client { get; set; }
     }
+
+    public class TimeEntry
+    {
+        public int TimeEntryId { get; set; }
+        public float Time { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime WorkDate { get; set; }
+
+        // foreign key
+        public int ProjectId { get; set; }
+        public Project Project { get; set; }
+    }
 }

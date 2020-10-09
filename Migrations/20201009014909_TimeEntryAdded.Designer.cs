@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TimeTrack.Data;
 
 namespace TimeTrack.Migrations
 {
     [DbContext(typeof(TimeTrackerContext))]
-    partial class TimeTrackerContextModelSnapshot : ModelSnapshot
+    [Migration("20201009014909_TimeEntryAdded")]
+    partial class TimeEntryAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,37 +54,11 @@ namespace TimeTrack.Migrations
                     b.ToTable("Project");
                 });
 
-            modelBuilder.Entity("TimeTrack.Models.TimeEntry", b =>
-                {
-                    b.Property<int>("TimeEntryId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("ProjectId");
-
-                    b.Property<float>("Time");
-
-                    b.Property<DateTime>("WorkDate");
-
-                    b.HasKey("TimeEntryId");
-
-                    b.HasIndex("ProjectId");
-
-                    b.ToTable("TimeEntry");
-                });
-
             modelBuilder.Entity("TimeTrack.Models.Project", b =>
                 {
                     b.HasOne("TimeTrack.Models.Client", "Client")
                         .WithMany("Projects")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("TimeTrack.Models.TimeEntry", b =>
-                {
-                    b.HasOne("TimeTrack.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

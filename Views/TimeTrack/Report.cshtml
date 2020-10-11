@@ -1,7 +1,7 @@
 @model IEnumerable<TimeTrack.Models.Client>
 
 @{
-    ViewData["Title"] = "";
+    ViewData["Title"] = "Report";
 }
 
 <h2>Report</h2>
@@ -9,18 +9,14 @@
 <table class="table">
     <thead>
         <tr><th>
-                Client ID
+                Client
             </th>
             <th>
-                Client Name
+                Project
             </th>
             <th>
-                Start Date
+                Total Hours
             </th>
-            <th>
-                Location
-            </th>
-            <th>Edit | Detail | Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -34,14 +30,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ClientId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ClientId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ClientId">Delete</a>
             </td>
         </tr>
 }

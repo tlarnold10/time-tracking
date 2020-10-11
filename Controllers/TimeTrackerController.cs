@@ -118,5 +118,10 @@ namespace TimeTrack.Controllers
         {
             return _context.Client.Any(e => e.ClientId == id);
         }
+
+        public async Task<IActionResult> Report()
+        {   
+            return View(await _context.Client.ToListAsync());
+        }
     }
 }

@@ -44,4 +44,11 @@ namespace TimeTrack.Models
         public int ProjectId { get; set; }
         public Project Project { get; set; }
     }
+
+    public class ReportViewClass
+    {
+        public int ReportId { get; set; }
+        public string ClientName { get; set; }
+        public string ProjectName { get; set; }
+    }
 }

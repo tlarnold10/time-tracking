@@ -1,4 +1,5 @@
-@model IEnumerable<>
+@model IEnumerable<TimeTrack.Models.ReportViewClass>
+
 @{
     ViewData["Title"] = "Report";
 }
@@ -22,13 +23,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientId)
+                @Html.DisplayFor(modelItem => item.ReportId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ClientName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
+                @Html.DisplayFor(modelItem => item.ProjectName)
             </td>
         </tr>
 }

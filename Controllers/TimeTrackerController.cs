@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using TimeTrack.Data;
 using TimeTrack.Models;
+using System;
+using System.Web;
+// using System.Web.Mvc;
 
 namespace TimeTrack.Controllers
 {
@@ -136,36 +139,3 @@ namespace TimeTrack.Controllers
         }
     }
 }
-
-// using (var context = new BookStore())
-// {
-//     var data = context.Authors
-//         .Join(
-//             context.Books,
-//             author => author.AuthorId,
-//             book => book.Author.AuthorId,
-//             (author, book) => new
-//             {
-//                 BookId = book.BookId,
-//                 AuthorName = author.Name,
-//                 BookTitle = book.Title
-//             }
-//         ).ToList();
-// 	
-//     foreach(var book in data)
-//     {
-//         Console.WriteLine("Book Title: {0} \n\t Written by {1}", book.BookTitle, book.AuthorName);
-//     }
-// }
-// 
-// public async Task<IActionResult> Notification()
-//         {   
-//             DateTime Today = DateTime.Today;
-//             string CurrentMonth = Today.ToString("MM");
-//             return View(await _context.Fridge
-//                 // .Where(b => b.FilterProgramPurchased && b.ExtendedWarrantyPurchased)
-//                 // .Where(b => (Convert.ToInt32(b.OrderDate.ToString("MM")) - Convert.ToInt32(CurrentMonth)) == 0)
-//                 .Where(f => ShowFilterNotification(f, Convert.ToInt32(CurrentMonth)))
-//                 .ToListAsync());
-//             // return "Hello world";
-//         }

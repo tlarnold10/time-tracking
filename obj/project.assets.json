@@ -12965,23 +12965,23 @@
     ]
   },
   "packageFolders": {
-    "/home/arnold/.nuget/packages/": {},
+    "/home/tlarnold10/.nuget/packages/": {},
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj",
+      "projectUniqueName": "/mnt/d/trevor/business/timetracking/TimeTrack.csproj",
       "projectName": "TimeTrack",
-      "projectPath": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj",
-      "packagesPath": "/home/arnold/.nuget/packages/",
-      "outputPath": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/",
+      "projectPath": "/mnt/d/trevor/business/timetracking/TimeTrack.csproj",
+      "packagesPath": "/home/tlarnold10/.nuget/packages/",
+      "outputPath": "/mnt/d/trevor/business/timetracking/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/arnold/.nuget/NuGet/NuGet.Config"
+        "/home/tlarnold10/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

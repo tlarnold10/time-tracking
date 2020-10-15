@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TrevorArnold\\programming\\business\\timetracking\\TimeTracking\\TimeTrack.csproj": {}
+    "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TrevorArnold\\programming\\business\\timetracking\\TimeTracking\\TimeTrack.csproj": {
+    "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TrevorArnold\\programming\\business\\timetracking\\TimeTracking\\TimeTrack.csproj",
+        "projectUniqueName": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj",
         "projectName": "TimeTrack",
-        "projectPath": "C:\\Users\\TrevorArnold\\programming\\business\\timetracking\\TimeTracking\\TimeTrack.csproj",
-        "packagesPath": "C:\\Users\\TrevorArnold\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TrevorArnold\\programming\\business\\timetracking\\TimeTracking\\obj\\",
+        "projectPath": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/TimeTrack.csproj",
+        "packagesPath": "/home/arnold/.nuget/packages/",
+        "outputPath": "/home/arnold/Documents/arnold_technologies/timetracking/TimeTrack/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\TrevorArnold\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/arnold/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

@@ -23,15 +23,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ReportId)
+                @item
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientName)
+                @item
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProjectName)
+                @Html.DisplayFor(modelItem => item)
             </td>
         </tr>
 }
+
     </tbody>
 </table>

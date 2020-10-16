@@ -122,9 +122,9 @@ namespace TimeTrack.Controllers
             return _context.Client.Any(e => e.ClientId == id);
         }
 
-        public async Task<IActionResult> Report()
+        public ViewResult Report()
         {   
-            return View(await _context.Project
+            return View(_context.Project
                         .Join(_context.Client,
                                 projectthing => projectthing.ClientId,
                                 clientthing => clientthing.ClientId,
@@ -134,7 +134,7 @@ namespace TimeTrack.Controllers
                                     ClientName = clientthing.ClientName,
                                     ProjectName = projectthing.ProjectName,
                                 })
-                        .ToListAsync());
+                        .ToList());
 
         }
     }
